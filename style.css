@@ -1,0 +1,219 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+.th {
+  font-family: 'Prompt';
+}
+
+.en {
+  font-family: 'Protest Riot';
+}
+
+header {
+  height: 150px;
+  width: 100vw;
+  background-color: rgb(240, 240, 240);
+}
+
+/*Main setting below*/
+
+main {
+  height: 630px;
+  width: 100vw;
+  background-color: rgb(240, 240, 240);
+  font-family: Prompt;
+}
+
+div.main {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+div.left {
+  margin: 0px 5% 20px;
+  width: 40%;
+  flex-basis: 450px;
+}
+
+div.right {
+  margin: 0px 5%;
+  width: 40%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+div.input {
+  background-color: white;
+  margin: 0px auto 5px;
+  width: 20rem;
+  padding: 1rem;
+  border: 1px solid rgb(169, 169, 169);
+  border-radius: 6px;
+  box-shadow: 1px 1px 5px rgb(169, 169, 169);
+}
+
+[type=text],
+[type=password] {
+  font-size: 1rem;
+  width: 100%;
+  height: 3rem;
+  padding: 0px 5px;
+  margin-bottom: 5px;
+  font-family: 'Protest Riot', 'Prompt';
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 6px;
+}
+
+[type=submit] {
+  font-size: 1rem;
+  width: 100%;
+  height: 3rem;
+  padding: 0px 5px;
+  margin-bottom: 5px;
+  font-weight: 600;
+  background-color: darkviolet;
+  color: white;
+  font-family: 'Prompt';
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+[type=submit]:hover {
+  background-color: rgb(105, 0, 149);
+}
+
+[type=submit]:active {
+  transform: scale(1.01);
+}
+
+[type=button] {
+  height: 3rem;
+  width: 80%;
+  background-color: rgb(0, 172, 0);
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 6px;
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+[type=button]:hover {
+  background-color: rgb(0, 140, 0);
+}
+
+[type=button]:active {
+  transform: scale(1.01);
+}
+
+div>a {
+  color: rgb(105, 0, 149);
+}
+
+main a:hover {
+  color: rgb(0, 0, 255);
+  cursor: pointer;
+}
+
+
+/*Footer setting below*/
+
+footer {
+  width: 100vw;
+  font-family: "Prompt";
+}
+
+div.footer {
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0px 3% 10px;
+  margin-top: 20px;
+}
+
+footer li {
+  list-style-type: none;
+}
+
+ul.lang {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100vw;
+  justify-content: flex-start;
+}
+
+.lang li,
+.function li {
+  padding: 2px 7px;
+}
+
+li a {
+  color: rgb(169, 169, 169);
+}
+
+li>a:hover {
+  color: rgb(50, 50, 50)
+}
+
+ul.function {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+a {
+  font-family: 'Prompt';
+  text-decoration: none;
+}
+
+/*media quries setting below*/
+
+
+@media (max-width: 430px) {
+  html {
+    font-size: 12px;
+  }
+
+  header {
+    height: 100px;
+  }
+
+  main {
+    height: 600px;
+    display: flex;
+  }
+
+  div.main {
+    flex-flow: row wrap;
+  }
+
+  div.left {
+    width: 100%;
+    margin: 0px auto 20px;
+    text-align: center;
+  }
+
+  div.left * {
+    margin: 1rem;
+  }
+
+  div.right {
+    width: 100%;
+    margin: 0px auto;
+  }
+
+  [type=text],
+  [type=password] {
+    font-size: 0.9rem;
+  }
+
+  footer {
+    font-size: 0.6rem;
+  }
+}
